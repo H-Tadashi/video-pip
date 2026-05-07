@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![icon](./yt-pip-v4/icons/icon128.png)
+![icon](icons/icon128.png)
 
 **ワンクリックで動画をフローティングウィンドウに。**  
 YouTube・Netflix・Prime Video など 17 サービスに対応した Chrome 拡張機能。
