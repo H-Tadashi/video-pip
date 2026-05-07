@@ -1,0 +1,66 @@
+{
+  "manifest_version": 3,
+  "name": "ピクチャーinピクチャー",
+  "version": "1.0.0",
+  "description": "ワンクリックで動画をピクチャーinピクチャーに。YouTube・Netflix・Prime Video など対応",
+  "permissions": ["scripting", "tabs", "activeTab"],
+  "host_permissions": [
+    "https://www.youtube.com/*",
+    "https://www.netflix.com/*",
+    "https://www.amazon.co.jp/*",
+    "https://www.amazon.com/*",
+    "https://www.disneyplus.com/*",
+    "https://tv.apple.com/*",
+    "https://www.hulu.jp/*",
+    "https://abema.tv/*",
+    "https://anime.dmkt-sp.jp/*",
+    "https://www.nicovideo.jp/*",
+    "https://tver.jp/*",
+    "https://www.paravi.jp/*",
+    "https://lemino.docomo.ne.jp/*",
+    "https://*.unext.jp/*",
+    "https://www.crunchyroll.com/*",
+    "https://www.twitch.tv/*",
+    "https://vimeo.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/*",
+        "https://www.netflix.com/*",
+        "https://www.amazon.co.jp/*",
+        "https://www.amazon.com/*",
+        "https://www.disneyplus.com/*",
+        "https://tv.apple.com/*",
+        "https://www.hulu.jp/*",
+        "https://abema.tv/*",
+        "https://anime.dmkt-sp.jp/*",
+        "https://www.nicovideo.jp/*",
+        "https://tver.jp/*",
+        "https://www.paravi.jp/*",
+        "https://lemino.docomo.ne.jp/*",
+        "https://*.unext.jp/*",
+        "https://www.crunchyroll.com/*",
+        "https://www.twitch.tv/*",
+        "https://vimeo.com/*"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_title": "PiP を切替"
+  }
+}
