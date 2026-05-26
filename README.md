@@ -1,4 +1,4 @@
-# 🎬 Video PiP — Picture-in-Picture for Any Streaming Service
+# Video PiP — Picture-in-Picture for Any Streaming Service
 
 <div align="center">
 
